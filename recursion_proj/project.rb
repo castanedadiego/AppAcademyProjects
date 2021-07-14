@@ -88,10 +88,6 @@ def merge(left, right)
     merged_array + left + right
 end
 
-
-
-
-
 def merge_sort(array)
     merged_array=[]
     return array if array.length<=1
