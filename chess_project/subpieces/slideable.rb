@@ -31,18 +31,15 @@ module Slideable
         returned_moves=[]
         x, y = self.pos
         potential_move= [x+dx, y+dy]
-        while self.board.valid?(potential_move) && self.board[potential_move].empty? #handles cases before out of bounds or blocked
-            returned_moves << potential_move
+        while self.board.valid_pos?(potential_move) #in bounds
+            if self.board.empty?(potential_move)
+                returned_moves << potential_move
+            else
+                returned_moves << potential_move if self.board[potential_move].color != self.color # not empty and opposite color means capturable
+                break
+            end
             potential_move= [potential_move[0]+dx, potential_move[1]+dy]
         end
-
-        if self.board[potential_move].empty? == false && self.board.valid?(potential_move) #only handles cases where path was blocked by piece
-
-            if self.board[potential_move].color != self.color #different color piece, can capture, add to potential move
-                returned_moves << potential_move
-            end
-        end
-
         return returned_moves
     end
 

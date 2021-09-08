@@ -1,0 +1,19 @@
+.Clock{
+    font-size: 28px;
+    color: white;
+    font-family: Orbitron;
+    width: 550px;
+    height: 94px;
+    border: 2px solid black;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-color: darkorange;
+    background-size: cover;
+    background-position-y: 20%;
+  }
+
+  .Clock p{
+    margin: 12px;
+    display: flex;
+    justify-content: space-between;
+  }

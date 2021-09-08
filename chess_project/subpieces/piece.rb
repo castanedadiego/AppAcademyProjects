@@ -9,9 +9,12 @@ class Piece
     attr_reader :color, :board, :pos
 
     def empty?
-        self == self.null_piece
+        self.board.empty?(pos)
     end
 
+    def to_s
+        return "#{self.symbol}"
+    end
 
     private
 

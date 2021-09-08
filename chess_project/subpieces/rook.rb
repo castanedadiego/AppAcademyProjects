@@ -5,8 +5,8 @@ class Rook < Piece
     include Slideable
 
     def symbol
-
-
+        return ♖
+    end
 
     private
 

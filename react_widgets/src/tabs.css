@@ -1,0 +1,57 @@
+.tab{
+    font-size: 15px;
+    color: white;
+    font-family: Orbitron;
+    width: 150px;
+    height: 194px;
+    margin: 0 20px 20px 20px;
+    padding: 10px;
+    background-size: cover;
+    background-position-y: 20%;
+    align-items: center;
+
+}
+
+.tab header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black solid 1px;
+    background-color: white;
+}
+
+.tab header span {
+    border-radius:13%;
+    background-color: rgb(33, 72, 189);
+    width: 33.33%;
+    border-top: black solid 2px;
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+    padding: 5px 5px 0px 5px;
+    margin-right: 1px;
+
+}
+
+.tab article{
+text-align: center;
+background-color: rgb(33, 72, 189);
+height: 300px;
+
+}
+
+.tab header :hover{
+    background-color: royalblue;
+}
+
+.tab ul span {
+    border: black solid 1px;
+
+
+}
+
+.tab .active {
+    font-weight: bold;
+}
+
+.tab :hover{
+    cursor: pointer;
+}
